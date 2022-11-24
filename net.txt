@@ -1,0 +1,30 @@
+package tutorial;
+import java.util.*; 
+
+public class net  
+{   
+    public static void main(String args[]) 
+    {     
+    	double basic = 0;
+        double HRA = 0;  
+        double DA = 0;
+        double GS = 0;
+        double income =0;
+        double net = 0;
+        
+           
+      
+        Scanner sc = new Scanner(System.in);  
+  
+        System.out.println("Enter basic salary");  
+        basic = sc.nextInt();  
+        
+        HRA=0.1*basic;
+        DA = 0.73*basic;
+        GS = basic + DA+ HRA;
+        income = 0.3*GS;
+        net = GS-income;
+        
+        System.out.println("Empleyee's net salary is : " + net);   
+    }   
+}
